@@ -1,9 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&family=Inter:wght@400;700&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  width: 80vw;
 }
 
 header {
@@ -40,11 +48,15 @@ main {
   flex-direction: column;
 }
 
-.intro {
+.intro,
+.about-me {
   background-color: #1c1a19;
   color: white;
-  padding: 10%;
   position: relative;
+}
+
+.intro {
+  padding: 10%;
   padding-bottom: 20vh;
 }
 
@@ -54,7 +66,8 @@ main {
   bottom: 0;
 }
 
-.intro-greet {
+.intro-greet,
+.about-me h2 {
   color: #ff6b00;
   font-family: "Crete Round", serif;
   font-style: normal;
@@ -80,7 +93,7 @@ main {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .social {
@@ -88,7 +101,6 @@ main {
 }
 
 .social-link {
-  text-decoration: none;
   padding: 5px;
   background-color: transparent;
   transition: 350ms;
@@ -100,4 +112,82 @@ main {
 
 .social-icon {
   height: 20px;
-} 
+}
+
+.about-me-section {
+  position: relative;
+  padding: 10%;
+  padding-bottom: 20vh;
+}
+
+.about-me,
+.about-me-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-me-text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+.resume {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  background: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  align-self: start;
+}
+
+.about-me-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.list-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+li {
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+}
+
+.languages {
+  list-style: inside url('../media/rectangle.svg');
+}
+
+.frameworks {
+  list-style: inside url('../media/square.svg');
+}
+
+.skills {
+  list-style: inside url('../media/circle.svg');
+}
