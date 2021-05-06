@@ -58,12 +58,7 @@ main {
 .intro {
   padding: 10%;
   padding-bottom: 20vh;
-}
-
-.intro-icon {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  background: url("../media/intro-icon.svg") #1c1a19 no-repeat 100% 500% / 50%;
 }
 
 .intro-greet,
