@@ -53,12 +53,17 @@ main {
   background-color: #1c1a19;
   color: white;
   position: relative;
+  padding: 8%;
 }
 
 .intro {
   padding: 10%;
   padding-bottom: 20vh;
-  background: url("../media/intro-icon.svg") #1c1a19 no-repeat 100% 500% / 50%;
+  background: url("../media/intro-icon.svg") #1c1a19 no-repeat 100% 170% / 45%;
+}
+
+.about-me {
+  background: url("../media/about-icon.svg") #1c1a19 no-repeat 100% 14.5% / 45%;
 }
 
 .intro-greet,
@@ -67,9 +72,18 @@ main {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
+  /*font-size: 68px;*/
+  /*line-height: 64px;*/
+  letter-spacing: 0.37px;
+}
+
+.intro-greet {
   font-size: 56px;
   line-height: 64px;
-  letter-spacing: 0.37px;
+}
+
+.about-me h2 {
+  font-size: 68px;
 }
 
 .intro-me {
@@ -109,9 +123,10 @@ main {
   height: 20px;
 }
 
-.about-me-section {
+.about-me-section,
+.stacks {
   position: relative;
-  padding: 10%;
+ /* padding: 8%;*/
   padding-bottom: 20vh;
 }
 
@@ -148,13 +163,13 @@ main {
   color: #fff;
   align-self: start;
 }
-
+/*
 .about-me-icon {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-
+*/
 .list-title {
   font-family: "Inter", sans-serif;
   font-style: normal;
